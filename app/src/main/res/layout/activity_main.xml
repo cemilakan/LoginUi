@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/withMatchHeightWrap"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:weightSum="12">
+
+        <LinearLayout
+            style="@style/withMatchHeightWrap"
+            android:background="@drawable/login_shape_bg"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+
+            <TextView
+                style="@style/withMatchHeightWrap"
+                android:textSize="@dimen/headerTextSize"
+                android:textAlignment="center"
+                android:textColor="@color/whiteTextColor"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Det Roid"
+                android:layout_marginTop="40dp"/>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/ic_login_bg"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLog"
+        style="@style/cardMMargin"
+        android:layout_gravity="center"
+        android:elevation="5dp"
+        app:cardCornerRadius="20dp"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            style="@style/withMachHeightMatch"
+            android:layout_gravity="center"
+            android:background="@color/whiteTextColor"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/withMatchHeightWrap"
+                android:layout_marginTop="20dp"
+                android:text="@string/app_Baslik"
+                android:textAlignment="center"
+                android:textColor="@color/tintColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/withMatchHeightWrap"
+                android:layout_marginTop="@dimen/loginMargin">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/editTextStyle"
+                    android:hint="@string/login_email_text"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/withMatchHeightWrap"
+                android:layout_marginTop="@dimen/loginMargin">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/editTextStyle"
+                    android:hint="@string/login_password_text"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/withWrapHeightWrap"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:text="@string/login_password_forget"
+                android:textColor="@color/tintColor"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginMargin"
+                android:text="@string/login_btn" />
+
+            <TextView
+                style="@style/withMatchHeightWrap"
+                android:layout_marginTop="20dp"
+                android:text="@string/login_signup_text"
+                android:textAlignment="center"
+                android:textColor="@color/tintColor"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

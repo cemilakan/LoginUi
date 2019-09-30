@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginUi</string>
+    <string name="app_Baslik">LOGIN</string>
+    <string name="login_email_text">Mail Adresiniz</string>
+    <string name="login_btn">Giriş Yap</string>
+    <string name="login_password_text">Şifreniz</string>
+    <string name="login_password_forget">Şifremi Unuttum</string>
+    <string name="login_signup_text">Hala bir hesabınız mı yok? Kayıt Olun</string>
+</resources>
